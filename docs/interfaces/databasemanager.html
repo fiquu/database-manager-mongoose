@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@fiquu/database-manager-mongoose | @fiquu/database-manager-mongoose</title>
+	<title>DatabaseManager | @fiquu/database-manager-mongoose</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -2335,7 +2335,7 @@ img {
 		<div class="container">
 			<div class="table-wrap">
 				<div class="table-cell">
-					<strong><a href="index.html">@fiquu/database-manager-mongoose</a></strong>
+					<strong><a href="../index.html">@fiquu/database-manager-mongoose</a></strong>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -2366,247 +2366,211 @@ img {
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class=" tsd-kind-interface">
-			<a href="interfaces/databaseclient.html" class="tsd-kind-icon">Database<wbr>Client</a>
+			<a href="databaseclient.html" class="tsd-kind-icon">Database<wbr>Client</a>
 		</li>
 		<li class=" tsd-kind-interface">
-			<a href="interfaces/databaseclientconfig.html" class="tsd-kind-icon">Database<wbr>Client<wbr>Config</a>
+			<a href="databaseclientconfig.html" class="tsd-kind-icon">Database<wbr>Client<wbr>Config</a>
 		</li>
-		<li class=" tsd-kind-interface">
-			<a href="interfaces/databasemanager.html" class="tsd-kind-icon">Database<wbr>Manager</a>
+		<li class="current tsd-kind-interface">
+			<a href="databasemanager.html" class="tsd-kind-icon">Database<wbr>Manager</a>
+			<ul>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="databasemanager.html#clients" class="tsd-kind-icon">clients</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-interface">
+					<a href="databasemanager.html#add" class="tsd-kind-icon">add</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-interface">
+					<a href="databasemanager.html#connect" class="tsd-kind-icon">connect</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-interface">
+					<a href="databasemanager.html#connection" class="tsd-kind-icon">connection</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-interface">
+					<a href="databasemanager.html#disconnect" class="tsd-kind-icon">disconnect</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-interface">
+					<a href="databasemanager.html#disconnectall" class="tsd-kind-icon">disconnect<wbr>All</a>
+				</li>
+			</ul>
 		</li>
 		<li class=" tsd-kind-type-alias">
-			<a href="globals.html#databaseclientsmap" class="tsd-kind-icon">Database<wbr>Clients<wbr>Map</a>
+			<a href="../globals.html#databaseclientsmap" class="tsd-kind-icon">Database<wbr>Clients<wbr>Map</a>
 		</li>
 		<li class=" tsd-kind-variable">
-			<a href="globals.html#_defaults" class="tsd-kind-icon">_defaults</a>
+			<a href="../globals.html#_defaults" class="tsd-kind-icon">_defaults</a>
 		</li>
 		<li class=" tsd-kind-function">
-			<a href="globals.html#connect" class="tsd-kind-icon">connect</a>
+			<a href="../globals.html#connect" class="tsd-kind-icon">connect</a>
 		</li>
 		<li class=" tsd-kind-function">
-			<a href="globals.html#connection" class="tsd-kind-icon">connection</a>
+			<a href="../globals.html#connection" class="tsd-kind-icon">connection</a>
 		</li>
 		<li class=" tsd-kind-function">
-			<a href="globals.html#create" class="tsd-kind-icon">create</a>
+			<a href="../globals.html#create" class="tsd-kind-icon">create</a>
 		</li>
 		<li class=" tsd-kind-function">
-			<a href="globals.html#createdatabasemanager" class="tsd-kind-icon">create<wbr>Database<wbr>Manager</a>
+			<a href="../globals.html#createdatabasemanager" class="tsd-kind-icon">create<wbr>Database<wbr>Manager</a>
 		</li>
 		<li class=" tsd-kind-function">
-			<a href="globals.html#disconnect" class="tsd-kind-icon">disconnect</a>
+			<a href="../globals.html#disconnect" class="tsd-kind-icon">disconnect</a>
 		</li>
 		<li class=" tsd-kind-function">
-			<a href="globals.html#getconnectionbyname" class="tsd-kind-icon">get<wbr>Connection<wbr>ByName</a>
+			<a href="../globals.html#getconnectionbyname" class="tsd-kind-icon">get<wbr>Connection<wbr>ByName</a>
 		</li>
 		<li class=" tsd-kind-function">
-			<a href="globals.html#updateclientconnection" class="tsd-kind-icon">update<wbr>Client<wbr>Connection</a>
+			<a href="../globals.html#updateclientconnection" class="tsd-kind-icon">update<wbr>Client<wbr>Connection</a>
 		</li>
 	</ul>
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
-		<div class="tsd-panel tsd-typography">
-			<a href="#database-manager-mongoose" id="database-manager-mongoose" style="color: inherit; text-decoration: none;">
-				<h1>database-manager-mongoose</h1>
-			</a>
-			<p>Database connections manager with Mongoose.</p>
-			<a href="#instalation" id="instalation" style="color: inherit; text-decoration: none;">
-				<h2>Instalation</h2>
-			</a>
-			<pre><code class="language-sh">npm i @fiquu/database-manager-mongoose</code></pre>
-			<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
-				<h2>Usage</h2>
-			</a>
-			<p>It&#39;s recommended to use it as a singleton instance in your project, so you can use the manager from any module.</p>
-			<p><code>./configs/database.ts</code>:</p>
-			<pre><code class="language-ts"><span class="hljs-keyword">import</span> { DatabaseClient } <span class="hljs-keyword">from</span> <span class="hljs-string">'@fiquu/database-manager-mongoose'</span>;
-
-<span class="hljs-keyword">const</span> config: DatabaseClient = {
-  uri: <span class="hljs-string">'mongodb://localhost:27017/test'</span>,
-  options: {
-    <span class="hljs-comment">// Mongoose connection options here...</span>
-  }
-};
-
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> [
-  {
-    name: <span class="hljs-string">'default'</span>,
-    config
-  }
-
-  <span class="hljs-comment">// You could add more clients if necessary...</span>
-]</code></pre>
-			<p><code>./components/database.ts</code>:</p>
-			<pre><code class="language-ts"><span class="hljs-keyword">import</span> { createDatabaseManager } <span class="hljs-keyword">from</span> <span class="hljs-string">'@fiquu/database-manager-mongoose'</span>;
-
-<span class="hljs-keyword">import</span> config <span class="hljs-keyword">from</span> <span class="hljs-string">'../configs/database'</span>;
-
-<span class="hljs-keyword">const</span> manager = createDatabaseManager();
-
-<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> client of config) {
-  manager.add(client);
-}
-
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> manager;</code></pre>
-			<p><code>./some/other/module.ts</code>:</p>
-			<pre><code class="language-ts"><span class="hljs-keyword">import</span> db <span class="hljs-keyword">from</span> <span class="hljs-string">'../../components/database'</span>;
-
-<span class="hljs-comment">// Ensure the 'default' client is connected...</span>
-db.connect(<span class="hljs-string">'default'</span>);
-
-<span class="hljs-comment">// ...</span>
-
-<span class="hljs-keyword">const</span> User = db.connection(<span class="hljs-string">'default'</span>).model(<span class="hljs-string">'User'</span>);
-<span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> User.create({
-  <span class="hljs-comment">//...</span>
-});
-
-<span class="hljs-comment">// ...</span></code></pre>
-			<a href="#api-docs" id="api-docs" style="color: inherit; text-decoration: none;">
-				<h2>API Docs</h2>
-			</a>
-			<p>Please visit <a href="https://fiquu.github.io/database-manager-mongoose/">https://fiquu.github.io/database-manager-mongoose/</a></p>
-		</div>
-		<div style="position:relative;"><a name="typedoc-main-index" class="tsd-anchor"></a></div>
+		<section class="tsd-panel tsd-hierarchy">
+			<h3>Hierarchy</h3>
+			<ul class="tsd-hierarchy">
+				<li>
+					<span class="target">DatabaseManager</span>
+				</li>
+			</ul>
+		</section>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
 					<section class="tsd-index-section ">
-						<h3>Interfaces</h3>
+						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-interface"><a href="interfaces/databaseclient.html" class="tsd-kind-icon">Database<wbr>Client</a></li>
-							<li class="tsd-kind-interface"><a href="interfaces/databaseclientconfig.html" class="tsd-kind-icon">Database<wbr>Client<wbr>Config</a></li>
-							<li class="tsd-kind-interface"><a href="interfaces/databasemanager.html" class="tsd-kind-icon">Database<wbr>Manager</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="databasemanager.html#clients" class="tsd-kind-icon">clients</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
-						<h3>Type aliases</h3>
+						<h3>Methods</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-type-alias"><a href="globals.html#databaseclientsmap" class="tsd-kind-icon">Database<wbr>Clients<wbr>Map</a></li>
-						</ul>
-					</section>
-					<section class="tsd-index-section ">
-						<h3>Variables</h3>
-						<ul class="tsd-index-list">
-							<li class="tsd-kind-variable"><a href="globals.html#_defaults" class="tsd-kind-icon">_defaults</a></li>
-						</ul>
-					</section>
-					<section class="tsd-index-section ">
-						<h3>Functions</h3>
-						<ul class="tsd-index-list">
-							<li class="tsd-kind-function"><a href="globals.html#connect" class="tsd-kind-icon">connect</a></li>
-							<li class="tsd-kind-function"><a href="globals.html#connection" class="tsd-kind-icon">connection</a></li>
-							<li class="tsd-kind-function"><a href="globals.html#create" class="tsd-kind-icon">create</a></li>
-							<li class="tsd-kind-function"><a href="globals.html#createdatabasemanager" class="tsd-kind-icon">create<wbr>Database<wbr>Manager</a></li>
-							<li class="tsd-kind-function"><a href="globals.html#disconnect" class="tsd-kind-icon">disconnect</a></li>
-							<li class="tsd-kind-function"><a href="globals.html#getconnectionbyname" class="tsd-kind-icon">get<wbr>Connection<wbr>ByName</a></li>
-							<li class="tsd-kind-function"><a href="globals.html#updateclientconnection" class="tsd-kind-icon">update<wbr>Client<wbr>Connection</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="databasemanager.html#add" class="tsd-kind-icon">add</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="databasemanager.html#connect" class="tsd-kind-icon">connect</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="databasemanager.html#connection" class="tsd-kind-icon">connection</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="databasemanager.html#disconnect" class="tsd-kind-icon">disconnect</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="databasemanager.html#disconnectall" class="tsd-kind-icon">disconnect<wbr>All</a></li>
 						</ul>
 					</section>
 				</div>
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
-			<h2>Type aliases</h2>
-			<section class="tsd-panel tsd-member tsd-kind-type-alias">
-				<a name="databaseclientsmap" class="tsd-anchor"></a>
-				<h3>Database<wbr>Clients<wbr>Map</h3>
-				<div class="tsd-signature tsd-kind-icon">Database<wbr>Clients<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="interfaces/databaseclient.html" class="tsd-signature-type">DatabaseClient</a><span class="tsd-signature-symbol">&gt;</span></div>
+			<h2>Properties</h2>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="clients" class="tsd-anchor"></a>
+				<h3>clients</h3>
+				<div class="tsd-signature tsd-kind-icon">clients<span class="tsd-signature-symbol">:</span> <a href="../globals.html#databaseclientsmap" class="tsd-signature-type">DatabaseClientsMap</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L24">index.ts:24</a></li>
+						<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L41">index.ts:41</a></li>
 					</ul>
 				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Gets a database client by name.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>returns</dt>
+						<dd><p>The database clients map.</p>
+						</dd>
+					</dl>
+				</div>
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
-			<h2>Variables</h2>
-			<section class="tsd-panel tsd-member tsd-kind-variable">
-				<a name="_defaults" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagConst">Const</span> _defaults</h3>
-				<div class="tsd-signature tsd-kind-icon">_defaults<span class="tsd-signature-symbol">:</span> <a href="interfaces/databaseclientconfig.html" class="tsd-signature-type">DatabaseClientConfig</a><span class="tsd-signature-symbol"> = Object.freeze&lt;DatabaseClientConfig&gt;({uri: null,options: {useUnifiedTopology: true,useNewUrlParser: true,useCreateIndex: true}})</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L26">index.ts:26</a></li>
-					</ul>
-				</aside>
-			</section>
-		</section>
-		<section class="tsd-panel-group tsd-member-group ">
-			<h2>Functions</h2>
-			<section class="tsd-panel tsd-member tsd-kind-function">
-				<a name="connect" class="tsd-anchor"></a>
-				<h3>connect</h3>
-				<ul class="tsd-signatures tsd-kind-function">
-					<li class="tsd-signature tsd-kind-icon">connect<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, __namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>connection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Connection</span><span class="tsd-signature-symbol">; </span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConnectionOptions</span><span class="tsd-signature-symbol">; </span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Connection</span><span class="tsd-signature-symbol">&gt;</span></li>
+			<h2>Methods</h2>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+				<a name="add" class="tsd-anchor"></a>
+				<h3>add</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+					<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, config<span class="tsd-signature-symbol">: </span><a href="databaseclientconfig.html" class="tsd-signature-type">DatabaseClientConfig</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L148">index.ts:148</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L60">index.ts:60</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Creates a client&#39;s database connection or reuses it.</p>
+								<p>Adds a named database client with the provided config.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>name: <span class="tsd-signature-type">any</span></h5>
+								<h5>name: <span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<p>The client name.</p>
 								</div>
 							</li>
 							<li>
-								<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>connection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Connection</span><span class="tsd-signature-symbol">; </span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConnectionOptions</span><span class="tsd-signature-symbol">; </span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>connection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Connection</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConnectionOptions</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-									</li>
-								</ul>
+								<h5>config: <a href="databaseclientconfig.html" class="tsd-signature-type">DatabaseClientConfig</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The client config.</p>
+								</div>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Connection</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						<p>The current or created connection.</p>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						<p>The created client.</p>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function">
-				<a name="connection" class="tsd-anchor"></a>
-				<h3>connection</h3>
-				<ul class="tsd-signatures tsd-kind-function">
-					<li class="tsd-signature tsd-kind-icon">connection<span class="tsd-signature-symbol">(</span>clients<span class="tsd-signature-symbol">: </span><a href="globals.html#databaseclientsmap" class="tsd-signature-type">DatabaseClientsMap</a>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Connection</span></li>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+				<a name="connect" class="tsd-anchor"></a>
+				<h3>connect</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+					<li class="tsd-signature tsd-kind-icon">connect<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Connection</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L134">index.ts:134</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L69">index.ts:69</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Returns the connection for the client.</p>
+								<p>Connects a named client to the database.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>clients: <a href="globals.html#databaseclientsmap" class="tsd-signature-type">DatabaseClientsMap</a></h5>
+								<h5>name: <span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
-									<p>The clients map.</p>
+									<p>The client name.</p>
 								</div>
 							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Connection</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<p>The current client connection.</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+				<a name="connection" class="tsd-anchor"></a>
+				<h3>connection</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+					<li class="tsd-signature tsd-kind-icon">connection<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Connection</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L50">index.ts:50</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Retrieves a client&#39;s connection.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
 							<li>
 								<h5>name: <span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
@@ -2615,187 +2579,76 @@ db.connect(<span class="hljs-string">'default'</span>);
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Connection</span></h4>
-						<p>The client connection.</p>
+						<p>The client&#39;s connection if any.</p>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function">
-				<a name="create" class="tsd-anchor"></a>
-				<h3>create</h3>
-				<ul class="tsd-signatures tsd-kind-function">
-					<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="interfaces/databaseclientconfig.html" class="tsd-signature-type">DatabaseClientConfig</a>, connection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Connection</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/databaseclient.html" class="tsd-signature-type">DatabaseClient</a></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L112">index.ts:112</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Creates or updates a named database client.</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>config: <a href="interfaces/databaseclientconfig.html" class="tsd-signature-type">DatabaseClientConfig</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The configuration object.</p>
-								</div>
-							</li>
-							<li>
-								<h5>connection: <span class="tsd-signature-type">Connection</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The current database client connection.</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="interfaces/databaseclient.html" class="tsd-signature-type">DatabaseClient</a></h4>
-						<p>The created or updated database connection object.</p>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function">
-				<a name="createdatabasemanager" class="tsd-anchor"></a>
-				<h3>create<wbr>Database<wbr>Manager</h3>
-				<ul class="tsd-signatures tsd-kind-function">
-					<li class="tsd-signature tsd-kind-icon">create<wbr>Database<wbr>Manager<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/databasemanager.html" class="tsd-signature-type">DatabaseManager</a></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L193">index.ts:193</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Creates a database manager instance.</p>
-							</div>
-						</div>
-						<h4 class="tsd-returns-title">Returns <a href="interfaces/databasemanager.html" class="tsd-signature-type">DatabaseManager</a></h4>
-						<p>The database manager instance.</p>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function">
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 				<a name="disconnect" class="tsd-anchor"></a>
 				<h3>disconnect</h3>
-				<ul class="tsd-signatures tsd-kind-function">
-					<li class="tsd-signature tsd-kind-icon">disconnect<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><a href="interfaces/databaseclient.html" class="tsd-signature-type">DatabaseClient</a>, force<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+					<li class="tsd-signature tsd-kind-icon">disconnect<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, force<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L164">index.ts:164</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L79">index.ts:79</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Closes a database connection by name.</p>
+								<p>Disconnects a named client from the database.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>client: <a href="interfaces/databaseclient.html" class="tsd-signature-type">DatabaseClient</a></h5>
+								<h5>name: <span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
-									<p>The client to disconnect.</p>
+									<p>The client name.</p>
 								</div>
 							</li>
 							<li>
-								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> force: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> force: <span class="tsd-signature-type">boolean</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<p>Whether to force disconnection.</p>
 								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						<p>The updated database client.</p>
+						<p>A promise to the disconnection.</p>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function">
-				<a name="getconnectionbyname" class="tsd-anchor"></a>
-				<h3>get<wbr>Connection<wbr>ByName</h3>
-				<ul class="tsd-signatures tsd-kind-function">
-					<li class="tsd-signature tsd-kind-icon">get<wbr>Connection<wbr>ByName<span class="tsd-signature-symbol">(</span>clients<span class="tsd-signature-symbol">: </span><a href="globals.html#databaseclientsmap" class="tsd-signature-type">DatabaseClientsMap</a>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Connection</span></li>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+				<a name="disconnectall" class="tsd-anchor"></a>
+				<h3>disconnect<wbr>All</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+					<li class="tsd-signature tsd-kind-icon">disconnect<wbr>All<span class="tsd-signature-symbol">(</span>force<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L96">index.ts:96</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L86">index.ts:86</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Retrieves a connection by client name.</p>
+								<p>Disconnects all clients from their databases.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>clients: <a href="globals.html#databaseclientsmap" class="tsd-signature-type">DatabaseClientsMap</a></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> force: <span class="tsd-signature-type">boolean</span></h5>
 								<div class="tsd-comment tsd-typography">
-									<p>The clients map.</p>
-								</div>
-							</li>
-							<li>
-								<h5>name: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The client name.</p>
+									<p>Whether to force disconnection.</p>
 								</div>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Connection</span></h4>
-						<p>The mongoose connection object.</p>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function">
-				<a name="updateclientconnection" class="tsd-anchor"></a>
-				<h3>update<wbr>Client<wbr>Connection</h3>
-				<ul class="tsd-signatures tsd-kind-function">
-					<li class="tsd-signature tsd-kind-icon">update<wbr>Client<wbr>Connection<span class="tsd-signature-symbol">(</span>clients<span class="tsd-signature-symbol">: </span><a href="globals.html#databaseclientsmap" class="tsd-signature-type">DatabaseClientsMap</a>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, connection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Connection</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L179">index.ts:179</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Updates a database client connection.</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>clients: <a href="globals.html#databaseclientsmap" class="tsd-signature-type">DatabaseClientsMap</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The database clients map.</p>
-								</div>
-							</li>
-							<li>
-								<h5>name: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The database client name.</p>
-								</div>
-							</li>
-							<li>
-								<h5>connection: <span class="tsd-signature-type">Connection</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The connection to set.</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>

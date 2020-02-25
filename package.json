@@ -1,7 +1,7 @@
 {
-  "name": "@fiquu/template",
+  "name": "@fiquu/database-manager-mongoose",
   "version": "1.0.0",
-  "description": "fiquu project template.",
+  "description": "Database manager with Mongoose.",
   "main": "lib/index.js",
   "scripts": {
     "test": "nyc mocha -r ts-node/register test/**/*.spec.ts",
@@ -12,17 +12,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fiquu/template.git"
+    "url": "git+https://github.com/fiquu/database-manager-mongoose.git"
   },
   "keywords": [
     "template"
   ],
-  "author": "fiquu (https://github.com/fiquu) <hi@fiquu.dev>",
+  "author": "fiquu <hi@fiquu.dev> (https://github.com/fiquu)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fiquu/template/issues"
+    "url": "https://github.com/fiquu/database-manager-mongoose/issues"
   },
-  "homepage": "https://github.com/fiquu/template#readme",
+  "homepage": "https://github.com/fiquu/database-manager-mongoose#readme",
   "engines": {
     "node": ">= 12",
     "npm": ">= 6"
@@ -47,5 +47,9 @@
     "ts-node": "^8.6.2",
     "typedoc": "^0.16.10",
     "typescript": "^3.8.2"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
   }
 }

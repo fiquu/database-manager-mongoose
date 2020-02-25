@@ -14,13 +14,23 @@ It's recommended to use it as a singleton instance in your project, so you can u
 
 `./configs/database.ts`:
 ```ts
-export default [{
-  name: 'default',
-  config: {
-    uri: 'mongodb://localhost:27017/test',
-    options: {}
+import { DatabaseClient } from '@fiquu/database-manager-mongoose';
+
+const config: DatabaseClient = {
+  uri: 'mongodb://localhost:27017/test',
+  options: {
+    // Mongoose connection options here...
   }
-}]
+};
+
+export default [
+  {
+    name: 'default',
+    config
+  }
+
+  // You could add more clients if necessary...
+]
 ```
 
 `./components/database.ts`:

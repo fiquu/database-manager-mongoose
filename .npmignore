@@ -1,0 +1,9 @@
+**/.eslintrc
+**/*.spec.ts
+typedoc.json
+.nyc_output
+.gitignore
+coverage
+.nycrc
+docs
+test

@@ -14,9 +14,9 @@ It's recommended to use it as a singleton instance in your project, so you can u
 
 `./configs/database.ts`:
 ```ts
-import { DatabaseClient } from '@fiquu/database-manager-mongoose';
+import { DatabaseClientConfig } from '@fiquu/database-manager-mongoose';
 
-const config: DatabaseClient = {
+const config: DatabaseClientConfig = {
   uri: 'mongodb://localhost:27017/test',
   options: {
     // Mongoose connection options here...

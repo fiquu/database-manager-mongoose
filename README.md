@@ -64,3 +64,6 @@ const user = await User.create({
 
 // ...
 ```
+
+## API Docs
+Please visit https://fiquu.github.io/database-manager-mongoose/

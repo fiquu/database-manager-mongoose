@@ -5,3 +5,5 @@ lib
 # Don't lint nyc coverage output
 .nyc_output
 coverage
+# Don't lint generated docs
+docs

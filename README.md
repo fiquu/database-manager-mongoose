@@ -1,8 +1,14 @@
-# database-manager-mongoose
+# @fiquu/database-manager-mongoose
+
+[![Build Status](https://travis-ci.org/fiquu/database-manager-mongoose.svg?branch=master)](https://travis-ci.org/fiquu/database-manager-mongoose)
+![GitHub](https://img.shields.io/github/license/fiquu/database-manager-mongoose)
+![GitHub last commit](https://img.shields.io/github/last-commit/fiquu/database-manager-mongoose)
+![npm (scoped)](https://img.shields.io/npm/v/@fiquu/database-manager-mongoose)
+![npm](https://img.shields.io/npm/dw/@fiquu/database-manager-mongoose)
 
 Database connections manager with Mongoose.
 
-## Instalation
+## Installation
 
 ```sh
 npm i @fiquu/database-manager-mongoose
@@ -65,5 +71,6 @@ const user = await User.create({
 // ...
 ```
 
-## API Docs
-Please visit https://fiquu.github.io/database-manager-mongoose/
+## Documentation
+
+Please visit https://fiquu.github.io/database-manager-mongoose/ for more info and options.

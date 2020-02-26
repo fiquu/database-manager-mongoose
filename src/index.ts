@@ -1,4 +1,7 @@
 import { createConnection, Connection, ConnectionOptions } from 'mongoose';
+import { createLogger } from '@fiquu/logger';
+
+const log = createLogger('@fiquu/database-manager-mongoose');
 
 export interface DatabaseClientConfig {
   /**
@@ -109,7 +112,7 @@ function getConnectionByName(clients: DatabaseClientsMap, name: string): Connect
  *
  * @returns {object} The created or updated database connection object.
  */
-function create(config: DatabaseClientConfig, connection: Connection): DatabaseClient {
+function createClient(config: DatabaseClientConfig, connection: Connection): DatabaseClient {
   const { options, uri }: DatabaseClientConfig = {
     ..._defaults,
     ...config,
@@ -147,26 +150,34 @@ function connection(clients: DatabaseClientsMap, name: string): Connection {
  */
 async function connect(name, { connection, uri, options }: DatabaseClient): Promise<Connection> {
   if (connection) {
+    log.debug(`Reusing connection for "${name}".`);
+
     return connection;
   }
 
-  return createConnection(uri, options);
+  log.debug(`Creating new connection for "${name}"...`);
+
+  return await createConnection(uri, options);
 }
 
 /**
  * Closes a database connection by name.
  *
- * @param {Map} client The client to disconnect.
+ * @param {Connection} connection The connection to disconnect.
+ * @param {string} name The client name (for debugging).
  * @param {boolean} force Whether to force disconnection.
- *
  * @returns {object} The updated database client.
  */
-function disconnect(client: DatabaseClient, force = false): Promise<void> {
-  if (!client.connection) {
+function disconnect(connection: Connection, name: string, force = false): Promise<void> {
+  if (!connection) {
+    log.debug(`Client "${name}" is already disconnected.`);
+
     return Promise.resolve();
   }
 
-  return client.connection.close(force);
+  log.debug(`Disconnecting "${name}"...`);
+
+  return connection.close(force);
 }
 
 /**
@@ -191,7 +202,7 @@ function updateClientConnection(clients: DatabaseClientsMap, name: string, conne
  * @returns {object} The database manager instance.
  */
 export function createDatabaseManager(): DatabaseManager {
-  const clients = new Map<string, DatabaseClient>();
+  const clients: DatabaseClientsMap = new Map<string, DatabaseClient>();
 
   return Object.freeze<DatabaseManager>({
     connection: connection.bind(null, clients),
@@ -202,7 +213,7 @@ export function createDatabaseManager(): DatabaseManager {
 
     add: (name, config) => {
       const connection = getConnectionByName(clients, name);
-      const client = create(config, connection);
+      const client = createClient(config, connection);
 
       clients.set(name, client);
 
@@ -219,16 +230,16 @@ export function createDatabaseManager(): DatabaseManager {
     },
 
     disconnect: async (name, force) => {
-      const client: DatabaseClient = clients.get(name);
+      const { connection }: DatabaseClient = clients.get(name);
 
-      await disconnect(client, force);
+      await disconnect(connection, name, force);
 
       updateClientConnection(clients, name, null);
     },
 
     disconnectAll: async force => {
-      for (const [name, client] of clients.entries()) {
-        await disconnect(client, force);
+      for (const [name, { connection }] of clients.entries()) {
+        await disconnect(connection, name, force);
 
         updateClientConnection(clients, name, null);
       }

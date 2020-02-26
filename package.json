@@ -4,7 +4,7 @@
   "description": "Database manager with Mongoose.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "nyc mocha -r ts-node/register test/**/*.spec.ts",
+    "test": "LOG_LEVEL=none nyc mocha -r ts-node/register test/**/*.spec.ts",
     "postversion": "git push --follow-tags",
     "build": "tsc && npm run docs",
     "docs": "typedoc",
@@ -28,6 +28,7 @@
     "npm": ">= 6"
   },
   "dependencies": {
+    "@fiquu/logger": "^1.0.1",
     "@types/mongoose": "^5.7.1",
     "@types/node": "^13.7.4",
     "mongoose": "^5.9.1"

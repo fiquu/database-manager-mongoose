@@ -2380,6 +2380,9 @@ img {
 		<li class=" tsd-kind-variable">
 			<a href="globals.html#_defaults" class="tsd-kind-icon">_defaults</a>
 		</li>
+		<li class=" tsd-kind-variable">
+			<a href="globals.html#log" class="tsd-kind-icon">log</a>
+		</li>
 		<li class=" tsd-kind-function">
 			<a href="globals.html#connect" class="tsd-kind-icon">connect</a>
 		</li>
@@ -2387,7 +2390,7 @@ img {
 			<a href="globals.html#connection" class="tsd-kind-icon">connection</a>
 		</li>
 		<li class=" tsd-kind-function">
-			<a href="globals.html#create" class="tsd-kind-icon">create</a>
+			<a href="globals.html#createclient" class="tsd-kind-icon">create<wbr>Client</a>
 		</li>
 		<li class=" tsd-kind-function">
 			<a href="globals.html#createdatabasemanager" class="tsd-kind-icon">create<wbr>Database<wbr>Manager</a>
@@ -2495,6 +2498,7 @@ db.connect(<span class="hljs-string">'default'</span>);
 						<h3>Variables</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-variable"><a href="globals.html#_defaults" class="tsd-kind-icon">_defaults</a></li>
+							<li class="tsd-kind-variable"><a href="globals.html#log" class="tsd-kind-icon">log</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
@@ -2502,7 +2506,7 @@ db.connect(<span class="hljs-string">'default'</span>);
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-function"><a href="globals.html#connect" class="tsd-kind-icon">connect</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#connection" class="tsd-kind-icon">connection</a></li>
-							<li class="tsd-kind-function"><a href="globals.html#create" class="tsd-kind-icon">create</a></li>
+							<li class="tsd-kind-function"><a href="globals.html#createclient" class="tsd-kind-icon">create<wbr>Client</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#createdatabasemanager" class="tsd-kind-icon">create<wbr>Database<wbr>Manager</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#disconnect" class="tsd-kind-icon">disconnect</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#getconnectionbyname" class="tsd-kind-icon">get<wbr>Connection<wbr>ByName</a></li>
@@ -2520,7 +2524,7 @@ db.connect(<span class="hljs-string">'default'</span>);
 				<div class="tsd-signature tsd-kind-icon">Database<wbr>Clients<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="interfaces/databaseclient.html" class="tsd-signature-type">DatabaseClient</a><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/ac11141/src/index.ts#L24">index.ts:24</a></li>
+						<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/fee5335/src/index.ts#L27">index.ts:27</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -2533,7 +2537,17 @@ db.connect(<span class="hljs-string">'default'</span>);
 				<div class="tsd-signature tsd-kind-icon">_defaults<span class="tsd-signature-symbol">:</span> <a href="interfaces/databaseclientconfig.html" class="tsd-signature-type">DatabaseClientConfig</a><span class="tsd-signature-symbol"> = Object.freeze&lt;DatabaseClientConfig&gt;({uri: null,options: {useUnifiedTopology: true,useNewUrlParser: true,useCreateIndex: true}})</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/ac11141/src/index.ts#L26">index.ts:26</a></li>
+						<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/fee5335/src/index.ts#L29">index.ts:29</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-variable">
+				<a name="log" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> log</h3>
+				<div class="tsd-signature tsd-kind-icon">log<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Logger</span><span class="tsd-signature-symbol"> = createLogger(&#x27;@fiquu/database-manager-mongoose&#x27;)</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/fee5335/src/index.ts#L4">index.ts:4</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -2550,7 +2564,7 @@ db.connect(<span class="hljs-string">'default'</span>);
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/ac11141/src/index.ts#L148">index.ts:148</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/fee5335/src/index.ts#L151">index.ts:151</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2596,7 +2610,7 @@ db.connect(<span class="hljs-string">'default'</span>);
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/ac11141/src/index.ts#L134">index.ts:134</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/fee5335/src/index.ts#L137">index.ts:137</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2625,16 +2639,16 @@ db.connect(<span class="hljs-string">'default'</span>);
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function">
-				<a name="create" class="tsd-anchor"></a>
-				<h3>create</h3>
+				<a name="createclient" class="tsd-anchor"></a>
+				<h3>create<wbr>Client</h3>
 				<ul class="tsd-signatures tsd-kind-function">
-					<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="interfaces/databaseclientconfig.html" class="tsd-signature-type">DatabaseClientConfig</a>, connection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Connection</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/databaseclient.html" class="tsd-signature-type">DatabaseClient</a></li>
+					<li class="tsd-signature tsd-kind-icon">create<wbr>Client<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="interfaces/databaseclientconfig.html" class="tsd-signature-type">DatabaseClientConfig</a>, connection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Connection</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/databaseclient.html" class="tsd-signature-type">DatabaseClient</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/ac11141/src/index.ts#L112">index.ts:112</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/fee5335/src/index.ts#L115">index.ts:115</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2672,7 +2686,7 @@ db.connect(<span class="hljs-string">'default'</span>);
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/ac11141/src/index.ts#L193">index.ts:193</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/fee5335/src/index.ts#L204">index.ts:204</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2689,13 +2703,13 @@ db.connect(<span class="hljs-string">'default'</span>);
 				<a name="disconnect" class="tsd-anchor"></a>
 				<h3>disconnect</h3>
 				<ul class="tsd-signatures tsd-kind-function">
-					<li class="tsd-signature tsd-kind-icon">disconnect<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><a href="interfaces/databaseclient.html" class="tsd-signature-type">DatabaseClient</a>, force<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">disconnect<span class="tsd-signature-symbol">(</span>connection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Connection</span>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, force<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/ac11141/src/index.ts#L164">index.ts:164</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/fee5335/src/index.ts#L171">index.ts:171</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2706,9 +2720,15 @@ db.connect(<span class="hljs-string">'default'</span>);
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>client: <a href="interfaces/databaseclient.html" class="tsd-signature-type">DatabaseClient</a></h5>
+								<h5>connection: <span class="tsd-signature-type">Connection</span></h5>
 								<div class="tsd-comment tsd-typography">
-									<p>The client to disconnect.</p>
+									<p>The connection to disconnect.</p>
+								</div>
+							</li>
+							<li>
+								<h5>name: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The client name (for debugging).</p>
 								</div>
 							</li>
 							<li>
@@ -2733,7 +2753,7 @@ db.connect(<span class="hljs-string">'default'</span>);
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/ac11141/src/index.ts#L96">index.ts:96</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/fee5335/src/index.ts#L99">index.ts:99</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2771,7 +2791,7 @@ db.connect(<span class="hljs-string">'default'</span>);
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/ac11141/src/index.ts#L179">index.ts:179</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/fee5335/src/index.ts#L190">index.ts:190</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">

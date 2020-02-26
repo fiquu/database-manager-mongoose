@@ -2406,12 +2406,17 @@ img {
 <div class="container container-main">
 	<div class="content-wrap">
 		<div class="tsd-panel tsd-typography">
-			<a href="#database-manager-mongoose" id="database-manager-mongoose" style="color: inherit; text-decoration: none;">
-				<h1>database-manager-mongoose</h1>
+			<a href="#fiquudatabase-manager-mongoose" id="fiquudatabase-manager-mongoose" style="color: inherit; text-decoration: none;">
+				<h1>@fiquu/database-manager-mongoose</h1>
 			</a>
+			<p><a href="https://travis-ci.org/fiquu/database-manager-mongoose"><img src="https://travis-ci.org/fiquu/database-manager-mongoose.svg?branch=master" alt="Build Status"></a>
+				<img src="https://img.shields.io/github/license/fiquu/database-manager-mongoose" alt="GitHub">
+				<img src="https://img.shields.io/github/last-commit/fiquu/database-manager-mongoose" alt="GitHub last commit">
+				<img src="https://img.shields.io/npm/v/@fiquu/database-manager-mongoose" alt="npm (scoped)">
+			<img src="https://img.shields.io/npm/dw/@fiquu/database-manager-mongoose" alt="npm"></p>
 			<p>Database connections manager with Mongoose.</p>
-			<a href="#instalation" id="instalation" style="color: inherit; text-decoration: none;">
-				<h2>Instalation</h2>
+			<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+				<h2>Installation</h2>
 			</a>
 			<pre><code class="language-sh">npm i @fiquu/database-manager-mongoose</code></pre>
 			<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
@@ -2419,9 +2424,9 @@ img {
 			</a>
 			<p>It&#39;s recommended to use it as a singleton instance in your project, so you can use the manager from any module.</p>
 			<p><code>./configs/database.ts</code>:</p>
-			<pre><code class="language-ts"><span class="hljs-keyword">import</span> { DatabaseClient } <span class="hljs-keyword">from</span> <span class="hljs-string">'@fiquu/database-manager-mongoose'</span>;
+			<pre><code class="language-ts"><span class="hljs-keyword">import</span> { DatabaseClientConfig } <span class="hljs-keyword">from</span> <span class="hljs-string">'@fiquu/database-manager-mongoose'</span>;
 
-<span class="hljs-keyword">const</span> config: DatabaseClient = {
+<span class="hljs-keyword">const</span> config: DatabaseClientConfig = {
   uri: <span class="hljs-string">'mongodb://localhost:27017/test'</span>,
   options: {
     <span class="hljs-comment">// Mongoose connection options here...</span>
@@ -2462,10 +2467,10 @@ db.connect(<span class="hljs-string">'default'</span>);
 });
 
 <span class="hljs-comment">// ...</span></code></pre>
-			<a href="#api-docs" id="api-docs" style="color: inherit; text-decoration: none;">
-				<h2>API Docs</h2>
+			<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
+				<h2>Documentation</h2>
 			</a>
-			<p>Please visit <a href="https://fiquu.github.io/database-manager-mongoose/">https://fiquu.github.io/database-manager-mongoose/</a></p>
+			<p>Please visit <a href="https://fiquu.github.io/database-manager-mongoose/">https://fiquu.github.io/database-manager-mongoose/</a> for more info and options.</p>
 		</div>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
@@ -2514,7 +2519,7 @@ db.connect(<span class="hljs-string">'default'</span>);
 				<div class="tsd-signature tsd-kind-icon">Database<wbr>Clients<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="interfaces/databaseclient.html" class="tsd-signature-type">DatabaseClient</a><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L24">index.ts:24</a></li>
+						<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/ac11141/src/index.ts#L24">index.ts:24</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -2527,7 +2532,7 @@ db.connect(<span class="hljs-string">'default'</span>);
 				<div class="tsd-signature tsd-kind-icon">_defaults<span class="tsd-signature-symbol">:</span> <a href="interfaces/databaseclientconfig.html" class="tsd-signature-type">DatabaseClientConfig</a><span class="tsd-signature-symbol"> = Object.freeze&lt;DatabaseClientConfig&gt;({uri: null,options: {useUnifiedTopology: true,useNewUrlParser: true,useCreateIndex: true}})</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L26">index.ts:26</a></li>
+						<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/ac11141/src/index.ts#L26">index.ts:26</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -2544,7 +2549,7 @@ db.connect(<span class="hljs-string">'default'</span>);
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L148">index.ts:148</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/ac11141/src/index.ts#L148">index.ts:148</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2590,7 +2595,7 @@ db.connect(<span class="hljs-string">'default'</span>);
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L134">index.ts:134</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/ac11141/src/index.ts#L134">index.ts:134</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2628,7 +2633,7 @@ db.connect(<span class="hljs-string">'default'</span>);
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L112">index.ts:112</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/ac11141/src/index.ts#L112">index.ts:112</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2666,7 +2671,7 @@ db.connect(<span class="hljs-string">'default'</span>);
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L193">index.ts:193</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/ac11141/src/index.ts#L193">index.ts:193</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2689,7 +2694,7 @@ db.connect(<span class="hljs-string">'default'</span>);
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L164">index.ts:164</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/ac11141/src/index.ts#L164">index.ts:164</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2727,7 +2732,7 @@ db.connect(<span class="hljs-string">'default'</span>);
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L96">index.ts:96</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/ac11141/src/index.ts#L96">index.ts:96</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2765,7 +2770,7 @@ db.connect(<span class="hljs-string">'default'</span>);
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/7efda2c/src/index.ts#L179">index.ts:179</a></li>
+								<li>Defined in <a href="https://github.com/fiquu/database-manager-mongoose/blob/ac11141/src/index.ts#L179">index.ts:179</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">

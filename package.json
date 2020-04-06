@@ -1,6 +1,6 @@
 {
   "name": "@fiquu/database-manager-mongoose",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Database manager with Mongoose.",
   "main": "lib/index.js",
   "scripts": {

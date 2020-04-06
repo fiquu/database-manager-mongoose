@@ -1,3 +1,5 @@
+process.env.MONGOMS_SYSTEM_BINARY = '/usr/bin/mongod';
+
 import { MongoMemoryServer } from 'mongodb-memory-server-core';
 import mongoose from 'mongoose';
 import { expect } from 'chai';

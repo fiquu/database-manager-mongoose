@@ -28,7 +28,7 @@
     "npm": ">= 6"
   },
   "dependencies": {
-    "@fiquu/logger": "^1.0.1"
+    "@fiquu/logger": "^1.0.2"
   },
   "peerDependencies": {
     "mongoose": "^5.9.7"

@@ -1,5 +1,5 @@
 {
-  "extends": "@fiquu",
+  "extends": "@fiquu/eslint-config/typescript",
   "env": {
     "mocha": true
   },

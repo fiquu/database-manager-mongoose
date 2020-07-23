@@ -4,7 +4,7 @@
   "description": "Database manager with Mongoose.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "LOG_LEVEL=none nyc mocha -r ts-node/register test/**/*.spec.ts",
+    "test": "LOG_LEVEL=none nyc mocha -r ts-node/register 'test/**/*.spec.ts'",
     "postversion": "git push --follow-tags",
     "build": "tsc && npm run docs",
     "docs": "typedoc",
@@ -24,32 +24,32 @@
   },
   "homepage": "https://github.com/fiquu/database-manager-mongoose#readme",
   "engines": {
-    "node": ">= 12",
-    "npm": ">= 6"
+    "node": "12",
+    "npm": "6"
   },
   "dependencies": {
     "@fiquu/logger": "^1.0.2"
   },
   "peerDependencies": {
-    "mongoose": "^5.9.7"
+    "mongoose": "^5.x.x"
   },
   "devDependencies": {
-    "@fiquu/eslint-config": "^3.0.2",
+    "@fiquu/eslint-config": "^3.0.7",
     "@types/chai": "^4.2.11",
-    "@types/faker": "^4.1.11",
-    "@types/mocha": "^7.0.2",
-    "@types/mongoose": "^5.7.8",
-    "@types/node": "^13.11.0",
-    "@typescript-eslint/eslint-plugin": "^2.26.0",
-    "@typescript-eslint/parser": "^2.26.0",
+    "@types/faker": "^4.1.12",
+    "@types/mocha": "^8.0.0",
+    "@types/mongoose": "^5.7.32",
+    "@types/node": "^12.12.51",
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/parser": "^3.7.0",
     "chai": "^4.2.0",
-    "eslint": "^6.8.0",
-    "mocha": "^7.1.1",
-    "mongodb-memory-server-core": "^6.5.2",
-    "nyc": "^15.0.1",
-    "ts-node": "^8.8.2",
-    "typedoc": "^0.17.4",
-    "typescript": "^3.8.3"
+    "eslint": "^7.5.0",
+    "mocha": "^8.0.1",
+    "mongodb-memory-server-core": "^6.6.1",
+    "nyc": "^15.1.0",
+    "ts-node": "^8.10.2",
+    "typedoc": "^0.17.8",
+    "typescript": "^3.9.7"
   },
   "directories": {
     "doc": "docs",

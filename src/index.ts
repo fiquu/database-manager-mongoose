@@ -145,6 +145,9 @@ function connection(clients: DatabaseClientsMap, name: string): Connection {
  *
  * @param {string} name The client name.
  * @param {object} client The database client object.
+ * @param {object} client.connection The optional connection to use.
+ * @param {string} client.uri The URI to connect to if no connection.
+ * @param {object} client.options The connection options to use.
  *
  * @returns {Connection} The current or created connection.
  */

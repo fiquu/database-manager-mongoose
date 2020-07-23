@@ -19,6 +19,7 @@ npm i @fiquu/database-manager-mongoose
 It's recommended to use it as a singleton instance in your project, so you can use the manager from any module.
 
 `./configs/database.ts`:
+
 ```ts
 import { DatabaseClientConfig } from '@fiquu/database-manager-mongoose';
 
@@ -40,6 +41,7 @@ export default [
 ```
 
 `./components/database.ts`:
+
 ```ts
 import { createDatabaseManager } from '@fiquu/database-manager-mongoose';
 
@@ -55,6 +57,7 @@ export default manager;
 ```
 
 `./some/other/module.ts`:
+
 ```ts
 import db from '../../components/database';
 
@@ -73,4 +76,4 @@ const user = await User.create({
 
 ## Documentation
 
-Please visit https://fiquu.github.io/database-manager-mongoose/ for more info and options.
+Please visit [the documentation page](https://fiquu.github.io/database-manager-mongoose/) for more info and options.

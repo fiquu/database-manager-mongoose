@@ -28,18 +28,18 @@
     "npm": "6"
   },
   "dependencies": {
-    "@fiquu/logger": "^1.0.4"
+    "@fiquu/logger": "^1.0.5"
   },
   "peerDependencies": {
-    "mongoose": "^5.x.x"
+    "mongoose": "5"
   },
   "devDependencies": {
-    "@fiquu/eslint-config": "^3.0.9",
+    "@fiquu/eslint-config": "^3.0.10",
     "@types/chai": "^4.2.12",
     "@types/faker": "^4.1.12",
     "@types/mocha": "^8.0.3",
     "@types/mongoose": "^5.7.36",
-    "@types/node": "^12.12.54",
+    "@types/node": "^12.12.55",
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "@typescript-eslint/parser": "^4.0.1",
     "chai": "^4.2.0",

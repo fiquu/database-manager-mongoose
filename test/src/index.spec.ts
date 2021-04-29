@@ -8,10 +8,6 @@ import { createDatabaseManager, DatabaseClientConfig, DatabaseManager } from '..
 
 const servers: Map<string, MongoMemoryServer> = new Map();
 
-servers.set('primary', new MongoMemoryServer());
-servers.set('secondary', new MongoMemoryServer());
-servers.set('tertiary', new MongoMemoryServer());
-
 const methods = [
   'connect', 'connection', 'disconnect', 'disconnectAll'
 ];
@@ -26,7 +22,11 @@ describe('Database', function () {
     uri: null
   };
 
-  before(function () {
+  before(async function () {
+    servers.set('primary', await MongoMemoryServer.create());
+    servers.set('secondary', await MongoMemoryServer.create());
+    servers.set('tertiary', await MongoMemoryServer.create());
+
     db = createDatabaseManager();
 
     db.add('default', { ...config });
@@ -77,7 +77,7 @@ describe('Database', function () {
   });
 
   it('should update a connection with a valid config as default', async function () {
-    const uri = await servers.get('primary').getConnectionString();
+    const uri = await servers.get('primary').getUri();
 
     db.add('default', {
       ...config,
@@ -151,7 +151,7 @@ describe('Database', function () {
     for (const name of servers.keys()) {
       db.add(name, {
         ...config,
-        uri: await servers.get(name).getConnectionString()
+        uri: await servers.get(name).getUri()
       });
 
       expect(db.clients.has(name)).to.be.true;

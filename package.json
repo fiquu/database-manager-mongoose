@@ -39,7 +39,7 @@
     "@typescript-eslint/parser": "^4.22.0",
     "chai": "^4.3.4",
     "eslint": "^7.25.0",
-    "mocha": "^8.3.2",
+    "mocha": "^10.2.0",
     "mongodb-memory-server-core": "^6.9.6",
     "mongoose": "^5.12.6",
     "nyc": "^15.1.0",
